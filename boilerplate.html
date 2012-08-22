@@ -18,8 +18,10 @@
 	<link rel="stylesheet" href="extensions/hash/deck.hash.css">
 	<link rel="stylesheet" href="extensions/scale/deck.scale.css">
 
+
 	<!-- Style theme. More available in /themes/style/ or create your own. -->
 	<link rel="stylesheet" href="themes/style/web-2.0.css">
+
 	
 	<!-- Transition theme. More available in /themes/transition/ or create your own. -->
 	<link rel="stylesheet" href="themes/transition/horizontal-slide.css">
@@ -30,6 +32,7 @@
 <body class="deck-container">
 
 <!-- Begin slides. Just make elements with a class of slide. -->
+
 
 
 <section class="slide">
@@ -55,12 +58,13 @@
 			<p>Prior to CSS (Cascading Style Sheets), nearly all of the presentational attributes of HTML documents were contained within the HTML markup.</p>
 			<p class="slide">All font, colors, font colors, background styles, element alignments, borders and sizes had to be explicitly described, <strong>repeatedly</strong>, within the HTML.</p>
 			<p class="slide">It was a MESS!</p>
+
 </section>			
 <section class="slide">
 	<h2>CSS (Cascading Style Sheets) : Pre History</h2>
 	<p class="">A REALLY BIG MESS!</p>
-	<pre class="slide"><code>
-		&lt;P LANG="en-US" CLASS="western" ALIGN=LEFT&gt;&lt;FONT FACE="Times New Roman, serif"&gt;&lt;FONT SIZE=2&gt;Blog&lt;/FONT&gt;&lt;FONT SIZE=2&gt; &lt;/FONT&gt;&lt;FONT SIZE=2&gt;:&lt;/FONT&gt;&lt;FONT SIZE=2&gt; &lt;/FONT&gt;&lt;FONT COLOR="#000080"&gt;&lt;U&gt;&lt;A HREF="http://www.FalsePositives.com/"&gt;&lt;FONT SIZE=2&gt;http://www.FalsePositives.com&lt;/FONT&gt;&lt;/A&gt;&lt;/U&gt;&lt;/FONT&gt;&lt;/FONT&gt;&lt;/P&gt; &lt;P LANG="en-US" CLASS="western"&gt;&lt;FONT COLOR="#000080"&gt;&lt;FONT COLOR="#000000"&gt;&lt;FONT SIZE=2&gt;&lt;SPAN STYLE="text-decoration: none"&gt;LinkedIn&lt;/SPAN&gt;&lt;/FONT&gt;&lt;/FONT&gt;&lt;/FONT&gt;&lt;FONT COLOR="#000080"&gt;&lt;U&gt;&lt;FONT FACE="Times New Roman, serif"&gt;&lt;FONT SIZE=2&gt; &lt;/FONT&gt;&lt;/FONT&gt;&lt;/U&gt;&lt;/FONT&gt;&lt;FONT COLOR="#000080"&gt;&lt;U&gt;&lt;FONT FACE="Times New Roman, serif"&gt;&lt;FONT SIZE=2&gt;:&lt;/FONT&gt;&lt;/FONT&gt;&lt;/U&gt;&lt;/FONT&gt;&lt;FONT COLOR="#000080"&gt;&lt;U&gt;&lt;FONT FACE="Times New Roman, serif"&gt;&lt;FONT SIZE=2&gt; &lt;/FONT&gt;&lt;/FONT&gt;&lt;/U&gt;&lt;/FONT&gt;&lt;FONT COLOR="#000080"&gt;&lt;U&gt;&lt;FONT FACE="Times New Roman, serif"&gt;&lt;FONT SIZE=2&gt;http://www.linkedin.com/in/ianairving&lt;/FONT&gt;&lt;/FONT&gt;&lt;/U&gt;&lt;/FONT&gt;&lt;/P&gt; &lt;P LANG="en-US" CLASS="western" ALIGN=LEFT&gt;&lt;FONT FACE="Times New Roman, serif"&gt;&lt;FONT SIZE=2&gt;&lt;FONT COLOR="#000080"&gt;&lt;FONT COLOR="#000000"&gt;&lt;SPAN STYLE="text-decoration: none"&gt;GitHub:&lt;/SPAN&gt;&lt;/FONT&gt;&lt;/FONT&gt;&lt;FONT COLOR="#000080"&gt;&lt;U&gt; &lt;/U&gt;&lt;/FONT&gt;&lt;FONT COLOR="#000080"&gt;&lt;U&gt;&lt;A HREF="http://github.com/iirving"&gt;http://github.com/iirving&lt;/A&gt;&lt;/U&gt;&lt;/FONT&gt;&lt;/FONT&gt;&lt;/FONT&gt;&lt;/P&gt; &lt;P LANG="en-US" CLASS="western" ALIGN=LEFT&gt;&lt;BR&gt;
+	<pre><code>
+&lt;P LANG="en-US" CLASS="western" ALIGN=LEFT&gt;&lt;FONT FACE="Times New Roman, serif"&gt;&lt;FONT SIZE=2&gt;Blog&lt;/FONT&gt;&lt;FONT SIZE=2&gt; &lt;/FONT&gt;&lt;FONT SIZE=2&gt;:&lt;/FONT&gt;&lt;FONT SIZE=2&gt; &lt;/FONT&gt;&lt;FONT COLOR="#000080"&gt;&lt;U&gt;&lt;A HREF="http://www.FalsePositives.com/"&gt;&lt;FONT SIZE=2&gt;http://www.FalsePositives.com&lt;/FONT&gt;&lt;/A&gt;&lt;/U&gt;&lt;/FONT&gt;&lt;/FONT&gt;&lt;/P&gt; &lt;P LANG="en-US" CLASS="western"&gt;&lt;FONT COLOR="#000080"&gt;&lt;FONT COLOR="#000000"&gt;&lt;FONT SIZE=2&gt;&lt;SPAN STYLE="text-decoration: none"&gt;LinkedIn&lt;/SPAN&gt;&lt;/FONT&gt;&lt;/FONT&gt;&lt;/FONT&gt;&lt;FONT COLOR="#000080"&gt;&lt;U&gt;&lt;FONT FACE="Times New Roman, serif"&gt;&lt;FONT SIZE=2&gt; &lt;/FONT&gt;&lt;/FONT&gt;&lt;/U&gt;&lt;/FONT&gt;&lt;FONT COLOR="#000080"&gt;&lt;U&gt;&lt;FONT FACE="Times New Roman, serif"&gt;&lt;FONT SIZE=2&gt;:&lt;/FONT&gt;&lt;/FONT&gt;&lt;/U&gt;&lt;/FONT&gt;&lt;FONT COLOR="#000080"&gt;&lt;U&gt;&lt;FONT FACE="Times New Roman, serif"&gt;&lt;FONT SIZE=2&gt; &lt;/FONT&gt;&lt;/FONT&gt;&lt;/U&gt;&lt;/FONT&gt;&lt;FONT COLOR="#000080"&gt;&lt;U&gt;&lt;FONT FACE="Times New Roman, serif"&gt;&lt;FONT SIZE=2&gt;http://www.linkedin.com/in/ianairving&lt;/FONT&gt;&lt;/FONT&gt;&lt;/U&gt;&lt;/FONT&gt;&lt;/P&gt; &lt;P LANG="en-US" CLASS="western" ALIGN=LEFT&gt;&lt;FONT FACE="Times New Roman, serif"&gt;&lt;FONT SIZE=2&gt;&lt;FONT COLOR="#000080"&gt;&lt;FONT COLOR="#000000"&gt;&lt;SPAN STYLE="text-decoration: none"&gt;GitHub:&lt;/SPAN&gt;&lt;/FONT&gt;&lt;/FONT&gt;&lt;FONT COLOR="#000080"&gt;&lt;U&gt; &lt;/U&gt;&lt;/FONT&gt;&lt;FONT COLOR="#000080"&gt;&lt;U&gt;&lt;A HREF="http://github.com/iirving"&gt;http://github.com/iirving&lt;/A&gt;&lt;/U&gt;&lt;/FONT&gt;&lt;/FONT&gt;&lt;/FONT&gt;&lt;/P&gt; &lt;P LANG="en-US" CLASS="western" ALIGN=LEFT&gt;&lt;BR&gt;
 	</code></pre>
 </section>
 <section class="slide">
@@ -73,34 +77,47 @@
 
 <section class="slide">
 	<h2>CSS : Table Driven Layout </h2>
-	<em>But</em> we still built the static layouts with html Tables</p><pre class="slide"><code>
-&lt;table&gt; 
-	&lt;tr&gt;	&lt;td colspan=3&gt;Header&lt;/td&gt;	&lt;/tr&gt; 
-	&lt;tr&gt;	&lt;td colspan=3&gt;Top Nav&lt;/td&gt;	&lt;/tr&gt; 
-	&lt;tr&gt; 
-		&lt;td width="100px"&gt;Secondary Nav&lt;td&gt; 
-		&lt;td&gt;Content&lt;/td&gt; &lt;td&gt;possible side bar&lt;/td&gt; 
-	&lt;/tr&gt; 
-	&lt;tr&gt;	&lt;td colspan=3&gt;Footer&lt;/td&gt;	&lt;/tr&gt;
+	<em>But</em> we still built the static layouts with html Tables (<a href="old.html">old</a>)</p>
+	 <pre class="slide"><code>
+&lt;table width="960px" border="1"&gt;
+  &lt;tr&gt;
+  	&lt;td colspan=3&gt;Header&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+  	&lt;td colspan=3&gt;Top Nav&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+  	&lt;td width="100px"&gt;Secondary Nav&lt;/td&gt;
+  	&lt;td&gt;Content&lt;/td&gt;
+  	&lt;td&gt;Side bar&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;&lt;td colspan=3&gt;Footer&lt;/td&gt;&lt;/tr&gt;
 &lt;/table&gt;
-	</code></pre>
+</code></pre>
+<p class="slide">I felt dirty just writing that</p>
 </section>
 		
 
 <section class="slide">
 	<h2>CSS : Table Driven Layout </h2>
-	And we used table layout in lining up FORM elements with their labels. (<em>Inside<em> the content cell of another table!)
+	And we used table layout in lining up FORM elements with their labels. (<em>Inside<em> the content cell of another table!) (<a href="old2.html">old2</a>)
 	<pre class="slide"><code>
-&lt;table&gt; &lt;tr&gt; 
-		&lt;td&gt;&amp;nbsp&lt;/td&gt; 
-		&lt;td &gt;Name: &lt;/td&gt; 
-		&lt;td&gt;&lt;input type="text"&gt;&lt;/td&gt; 
-&lt;/tr&gt; 	&lt;tr&gt; 
-		&lt;td&gt;&amp;nbsp&lt;/td&gt; 
-		&lt;td &gt;Company: &lt;/td&gt; 
-		&lt;td&gt;&lt;input type="text"&gt;&lt;/td&gt; 
-&lt;/tr&gt; 
-&lt;/table&gt;</code></pre>
+&lt;td&gt;Content
+	&lt;table&gt; 
+      	&lt;tbody&gt;&lt;tr&gt;
+    		&lt;td&gt;&nbsp;&lt;/td&gt;
+    		&lt;td&gt;Name:   &lt;/td&gt;
+    		&lt;td&gt;&lt;input type="text"&gt;&lt;/td&gt;
+    	&lt;/tr&gt;&lt;tr&gt;
+    	&lt;/tr&gt;&lt;tr&gt;
+    		&lt;td&gt;&nbsp;&lt;/td&gt;
+    		&lt;td&gt;Company:   &lt;/td&gt;
+    		&lt;td&gt;&lt;input type="text"&gt;&lt;/td&gt;
+    	&lt;/tr&gt;&lt;tr&gt;
+            	&lt;/tr&gt;&lt;/tbody&gt;
+	&lt;/table&gt;
+&lt;/td&gt;
+	</code></pre>
 </section>
 
 <section class="slide">
@@ -119,19 +136,39 @@
 </section>
 
 <section class="slide">
-		<h2>CSS : Grids to the rescue</h2>
-		<p>Grids offered a solution for layout that got the structure out of the html markup : 
-		<p>See <a href=">http://www.alistapart.com/articles/practicalcss/">From Table Hacks to CSS Layout: A Web Designer’s Journey</a> </p>
-		<p class="silde">And they offered a strong Visual Design Language from a years of print layout: <a href="http://www.smashingmagazine.com/2007/04/14/designing-with-grid-based-approach/">Designing With Grid-Based Approach</a> </p>
-		<p >shown some fragment image</p>
+	<h2>CSS : Grids to the rescue</h2>
+	<p>Grids offered a solution for layout that got the structure out of the html markup : 
+	<p>See <a href=">http://www.alistapart.com/articles/practicalcss/">From Table Hacks to CSS Layout: A Web Designer’s Journey</a> </p>
+	<p class="silde">And they offered a strong Visual Design Language from a years of print layout: <a href="http://www.smashingmagazine.com/2007/04/14/designing-with-grid-based-approach/">Designing With Grid-Based Approach</a> </p>
+</section>
+
+<section  class="slide">
+	<h2>CSS : Grids to the rescue</h2>
+	(<a href="css1.html">css1</a>)
+	<pre class="slide"><code>
+&lt;div id="content" class="article span-14 append-3"&gt;
+	&lt;div class="span-14"&gt;Content&lt;/div&gt;
+     	&lt;div class="span-14"&gt;
+        	&lt;lable class="span-3 append-2" for="fname"&gt;Name:&lt;/lable&gt;
+      		&lt;span class="span-2"&gt;&lt;/span&gt;
+      		&lt;input id="fname" class="span-8 alignR" type="text"&gt;
+      	&lt;/div&gt;
+        &lt;div class="span-14"&gt;
+        	&lt;lable class="span-3 append-2" for="company"&gt;Company:&lt;/lable&gt;
+      		&lt;span class="span-2"&gt;&lt;/span&gt;
+      		&lt;input id="company" class="span-8 alignR" type="text"&gt;
+	&lt;/div&gt;
+                
+&lt;/div&gt;
+	</code></pre>
+</section>
 
 </section>
 <section class="slide"><h2>CSS : Grids to the rescue</h2>
 
 	<p >This was a a <strong>BIG</strong> improvement.</p>
-	<p class="side">We now had much cleaner HTML markup and all our Layout where in the CSS </p>
-	<p class="side">and allowed some things that where not possible with table driven layout
-	 Show some as demonstrated by the <a href="http://www.csszengarden.com/">CSS Zen Garden</a> </p>
+	<p class="side">We now had much cleaner HTML markup and all our Layout in the CSS </p>
+	<p class="side">and that allowed some things that where not possible with table driven layout as demonstrated by the <a href="http://www.csszengarden.com/">CSS Zen Garden</a> </p>
 </section>
 
 <section class="slide">
@@ -161,6 +198,7 @@
 </section>
 
 
+
 <section class="slide">
 	<h2>CSS : Elastic Design </h2>
 	<p>Now there had been some crazy people as far back as 2001 and 2002 who talked about "elastic design" 
@@ -176,26 +214,228 @@
 <p class="slide">Until ...</p>
 </section>
 
-<section class="slide"><h2>CSS : They Arrived</h2>
-	in 2007, January 9,  Steve Jobs introduced the iPhone and everything changed
+<section class="slide">
+	<h2>CSS : They Arrived</h2>
+	<p>in 2007, January 9,  Steve Jobs introduced the iPhone and everything changed
 	
-	Image of Steve Jobs on stage with iPhone
+	<p class="slide">Image of Steve Jobs on stage with iPhone</p>
+
 
 	<p class="slide">and suddenly those layouts that worked on a 17" laptop didn't look so hot :(</p>
 	<p class="slide">and then the Android devices,</p>
 	<p class="slide">and the iPad</p>
 	<p class="slide">So how do you developed a web site that "works" on all those layouts without going crazy? </p>
-
     <p class="slide">(insert here graphic of Ian pulling out the rest of his hair)</p>
-    <p class="slide">Now round this time CSS3 was showing up in Chrome. Firefox and Safari 
-	<p class="slide"> CSS 3 Media Queries (are an extension of @media rules previously used to create print only CSS)</p>
+</section>
+
+ <section class="slide">
+ 	<h2>CSS : They Arrived</h2>
+    <p class="slide">Now round this time CSS3 support was showing up in Chrome. Firefox and Safari </p>
+	<p class="slide">and CSS3 included Media Queries (which are an extension of @media rules previously used to create print only CSS)</p>
 	<p class="slide">And this gave us a way out</p>
-
-</section>
-<section class="side">
-
 </section>
 
+ <section class="slide">
+ 	<h2>CSS : Responive Desgin</h2>
+   
+   <ul>
+   	<li class="slide">A flexible grid-based layout :
+   		<ul>
+   			<li class="slide">The layout of a website can shift and adapt to changes in screen size and device capability with Fluid Grids.</li>
+   		</ul>
+    </il>
+    <li class="slide"> Media queries :  
+    	<ul>
+    		<li class="slide">CSS3 Media Queries and JavaScript tools that adapt with real-time Feature detection.</li>
+    	</ul>
+    </li>
+    <ul>
+
+ <p class="slide">
+    <a ref="http://www.alistapart.com/articles/responsive-web-design/">A List Apart : Responsive Web Design</a></br>
+    <a href="http://blogs.msdn.com/b/cdndevs/archive/2012/02/15/what-the-heck-is-responsive-web-design.aspx">What the heck is Responsive Web Design?</a></br>
+    <a href="https://developers.facebook.com/html5/blog/post/4/">Responsive Design Essentials: Look Great on any Device</a>
+</p>
+	
+</section>
+
+
+ <section class="slide">
+ 	<h2>CSS : Responive Desgin Challenges</h2>
+
+	 Responsive Navigation
+           
+                http://bradfrostweb.com/blog/web/responsive-nav-patterns/
+                
+                http://webdesignerwall.com/tutorials/mobile-navigation-design-tutorial
+
+
+ </section>
+
+  <section class="slide">
+ 	<h2>CSS : Responive Desgin Challenges</h2>
+
+	  Progressive disclosure
+             http://webcloud.se/jQuery-Collapse/
+
+                
+ </section>
+
+   <section class="slide">
+ 	<h2>CSS : Responive Desgin Challenges</h2>
+
+
+     Making Actions and Inputs finger friendly
+           http://uxdesign.smashingmagazine.com/2012/02/21/finger-friendly-design-ideal-mobile-touchscreen-target-sizes/
+</li>
+
+                
+ </section>
+
+ <section class="slide">
+ 	<h2>CSS : CSS Preprocessors </h2>
+
+ (extends and is interpreted into CSS.)
+       
+       It adds the stuff that should have been in CSS in the first place.
+          things like variables, mixins, and functions, math!
+       Write comment that don't end up in your production code
+       It will make your CSS more maintainable
+           by making it DRY, as in Don't Repeat Yourself.
+       It will let you write better CSS (with better cross browser support) 
+       the production CSS output will be highly compressed and gzipped.
+           
+                
+ </section>
+
+<section class="slide">
+ 	<h2>CSS : CSS Preprocessors </h2>
+
+ 	     Several CSS preprocessors are available today, like LESS, SASS, or Stylus.
+     http://www.catswhocode.com/blog/8-css-preprocessors-to-speed-up-development-time
+           
+     I use Sass (stands for Syntactically Awesome Stylesheets)  http://sass-lang.com/   http://thesassway.com/
+         - the .scss file type is a super set of CSS
+         - the Compass library (http://compass-style.org/) for Sass adds robust CSS3 mixins, and helper functions for urls and sprites.
+    
+
+                
+ </section>
+
+ <section class="slide">
+ 	<h2>CSS : CSS Preprocessors </h2>
+
+ 	    variables 
+ 	 <pre class=""><code>
+    $blue: #3bbfce;
+    $scotia-red: #cc3333;
+    $scotia-gold: #e19617;
+    
+    $margin: 16px;
+
+   .content_navigation {
+       color: $blue; 
+    }
+
+   .border {
+     padding: $margin / 2;
+     margin: $margin / 2;
+    border: 2px $blue solid;
+    }
+		
+</code></pre>
+                
+ </section>
+
+ <section class="slide">
+ 	<h2>CSS : CSS Preprocessors </h2>
+
+ 	 Mixin's : used to share comman patterns of properties, which can then be reused.
+       	 <pre class=""><code>	 
+@mixin my-style {
+		background: red;   color: white;   float: left;   display: block;   }		     
+
+.box-1 {    @include my-style; 			  }
+
+.box-2 {
+	@inculde my-style;
+	font-size: 16px;
+}
+
+=> 
+.box-1 { background: red; color: white; float: left; display: block; }    
+.box-2 { background: red; color: white; float: left; display: block; font-size: 16px; }
+
+   
+</code></pre>
+                
+ </section>
+
+
+ <section class="slide">
+ 	<h2>CSS : CSS Preprocessors </h2>
+
+ 	Mixin's with Parameters (from the Compass library)
+ 	<pre class=""><code>    
+.simple   { @include border-radius(4px, 4px); }
+
+=>
+
+.simple {-webkit-border-radius: 4px 4px;
+		-moz-border-radius: 4px / 4px;
+		-khtml-border-radius: 4px / 4px;
+		 border-radius: 4px / 4px; }
+	</code></pre> 
+ </section>
+
+ <section class="slide">
+ 	<h2>CSS : CSS Preprocessors </h2>
+	extend's let you use you selector to inherit all the styles of another without duplicating the CSS properties
+ 			 <pre class=""><code>
+.my-style {	background: red;	color: white;  float: left;  display: block;  }		     
+
+.box-1 {  @extend my-style; 			  }
+
+.box-2 {	@extend my-style;   font-size: 16px;    }
+
+
+=>    
+.box-1 .box-2 {	background: red; color: white; float: left; display: block;  }     
+.box-2 {font-size: 16px;  }
+</code></pre>
+                
+ </section>
+
+
+ <section class="slide">
+ 	<h2>CSS : CSS Preprocessors  </h2>
+
+		a final world about the Compass library :
+		<ul>
+		  </li>robust CSS3 mixins</li>
+		  <li>helper functions for urls and sprites</li>
+		  <li>helps with cross browser compatibility</li>
+ </section>
+
+ <section class="slide">
+ 	<h2>CSS : CSS3 </h2>
+
+                
+ </section>
+
+
+<section class="slide">
+ 	<h2>CSS : CSS3 </h2>
+
+                
+ </section>
+
+
+<section class="slide">
+ 	<h2>CSS : CSS3 </h2>
+
+                
+ </section>
 
 
 <!-- End slides. -->

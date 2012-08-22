@@ -1,0 +1,317 @@
+Mod Web Dev 
+
+  Design in a Moblie world
+
+    A Major Desgin Issue is the the proliferation of devices and screens,
+        > 5 years ago you worried about the Desktop (23") and Latop {17"), and maybe (but not really) the occuaisally BB - not really becuase few non C*O's had them or used them to acess the web.
+
+      and we had a resonable grap on how to design for those designs,  mosttly Static layouts from 960 px to 1200 px wide.
+
+      
+      We mostly built the static layout with html Tables (That's how I did it in 1999)
+        a Row for the Header, a Row for top nav, 
+        <table>
+          <tr><td colspan=3>Header</td></tr>
+          <tr><td colspan=3>Top Nav</td></tr>
+          <tr>
+             <td width="100px">Secondary Nav<td>
+             <td>Content</td>
+             <td>possible side bar</td>
+          </tr>
+          <tr><td colspan=3>Footer</td></tr>
+        </table>
+        
+        (I felt dirty just writing that)  
+        
+        Another common use for table layout is lining up FORM elements with their labels. 
+        
+        
+        
+
+
+
+   if companies bothered to think/develop for mobile devices you sub doained a m.yourdomian.com (or yourdomian.com/m) , developeed a spertate site, with simplyed content and functionality.  
+
+and since the iphone came out, 5 years ago, that has been "the plan" for mobile 
+
+       Today we have 100's of milliions of (at mininum) devices, each at a diferent size : iPhones, iPod Touchs, iPads (soon a 7" mini iPad, maybe); Android phones, Andriod Tables, plus the "older" Laptops (11" to 17") and desktops (23" to 33") and  Google glasses, and Retina Displays
+
+      and the next billion devices on the web with be "smart" phones or Tablets and Pads (all < 11")
+
+     we are in a "Post Pc" world now.  
+
+     how do you developed a web site that "works" on all those layouts without going crazy? 
+
+    (insert here graphic of Ian pulling out the rest of his hair)
+
+    Well a few things did change since 1999
+    
+2001    http://www.alistapart.com/articles/practicalcss/ Tables are Dead... 
+
+From Table Hacks to CSS Layout: A Web Designer’s Journey (2001)
+http://www.alistapart.com/articles/journey/
+    
+        We now use CSS grid layouts 
+
+        <div class="container">
+          <div id="header">Header<div>
+          <div id="nav">Top Nav</div>
+  
+             <Div id="secondary">Secondary Nav<div>
+             <div id="content" class="article">Content</div>
+             <div id="sidebar" class"section">possible side bar</div>
+        
+          <div id="footer">Footer</div>
+        </div>
+        
+        Show some CSS Zen Garden Layouts http://www.csszengarden.com/
+ 
+
+
+These was a a big improvement  
+http://www.smashingmagazine.com/2007/04/14/designing-with-grid-based-approach/
+
+so there were soon a flood of CSS frameworks with the benefits of
+
+A easy to use grid
+A Sensible default typography and styling baseline
+A  browser CSS reset
+A stylesheet for printing
+
+and the biggest difference being the size of the grid (920px, 1024px 1140px were commonly used ) and the number of columns (4 or 12 or 16 )
+and there are even grid generators (plug in your total width, and number of max number of columns and BINGO! U Haz Layout)
+
+BluePrint http://blueprintcss.org/ come out in 2007 and I started using it right away (it was way better that want I had evolved on my own)
+
+
+but these were still Static grids! and after 2007 ( January 9 it be precise) is was become more and more obvious that we had a problem
+
+Now their had been some crazy people as far back as at least 2001 and 2002 wo talked about "elastic design" 
+
+ (http://www.alistapart.com/articles/flexiblelayouts/)
+
+example
+
+Dug Falby at http://www.donkeyontheedge.com/ala.html  (show on tab)
+
+or Eric Costello http://glish.com/css/
+
+
+But they were ignored by Clients and developers (like me) who where  used to static or even print layouts
+
+
+
+
+around 2010 we  elastic or fluid layouts revisited and from this was born responsive layout
+
+http://www.alistapart.com/articles/responsive-web-design/
+
+   Part of the solution is "Responive Desgin"
+
+     the goal is "Look Great on any Device"
+     https://developers.facebook.com/html5/blog/post/4/
+     
+
+   How? by using 
+
+       1. A flexible grid-based layout  :     The layout of a website can shift and adapt to changes in screen size and device capability with Fluid Grids 
+        2.Media queries  CSS3 Media Queries and JavaScript tools that adapt with real-time Feature detection
+
+               http://blogs.msdn.com/b/cdndevs/archive/2012/02/15/what-the-heck-is-responsive-web-design.aspx
+               
+               
+      
+      http://webexpedition18.com/articles/responsive-css-frameworks/
+               
+               
+     Note : Responsive is good even if you are only targeting Mobile! i.e 3" iPhones; 4.5" Android; 7" Nexus Tablet; 9" iPad
+     
+        
+    challenges :
+       
+       Design Navigation that works on 3" as well as >9"
+       
+       
+           See Responsive Navigation
+           
+           see Progressive disclosure
+           
+       Making Actions and Inputs finger friendly
+           http://uxdesign.smashingmagazine.com/2012/02/21/finger-friendly-design-ideal-mobile-touchscreen-target-sizes/
+       
+       
+    
+      Using Native Mobile app Look and Feel in your web app
+      
+         why ? becuase most people expect iit to look and act like the app's they have installed.  
+         Act similar and have to deal with less learning / training
+         and most of the UX from native app is very very good
+         
+         
+         
+      ( Responsive Email Design, Mobile-friendly layouts and design elements
+        http://www.campaignmonitor.com/guides/mobile/
+           Email Client Popularity
+        http://www.campaignmonitor.com/resources/will-it-work/email-clients/
+          CSS support in email clients
+        http://www.campaignmonitor.com/css/
+    
+        )
+      
+      
+      
+      
+      
+      
+           
+    
+       
+       
+       
+       
+       EMs NOt PXs
+       
+        http://ejohn.org/blog/sub-pixel-problems-in-css/
+        
+       
+    
+    
+  JavaScript
+  
+  
+  the rise of AJAX
+  
+  
+ unobtrusive Javascript : 
+       
+   Just as CSS allowed us to remove layout from the markup, unobtrusive JS allows you to separation of functionality (the "behavior layer") from a Web page's structure/content and presentation
+
+rather than lots of inline javascript:  
+      <input type="text" name="date" onchange="validateDate()" />  
+        
+ you do more of 
+ 
+ <input type="text" name="date" id="date" />       
+   
+   window.onload = function() {
+    document.getElementById('date').onchange = validateDate;
+};     
+        
+  JavaScript Frameworks
+  
+  
+  JavaScript MVC frameworks
+  
+  
+  LinkedIn on how they built a brand new iPad app built using HTML5, backbone.js, and underscore.js, plus the iOs UIWebView wrapper.
+  http://engineering.linkedin.com/mobile/linkedin-ipad-using-local-storage-snappy-mobile-apps
+  http://engineering.linkedin.com/linkedin-ipad-5-techniques-smooth-infinite-scrolling-html5
+  
+  
+        
+        
+        
+        
+        
+        Modern Web App Development stack in 2012
+        
+        
+
+            
+     front end
+            
+         CSS 3
+         
+           using a html5 css framework  like html5 boilerplate
+           
+        using html5 markup 
+        
+          if appropriate to project using html5 api's 
+          http://mobilehtml5.org/
+          
+          and Modernizer js plus ploy fills for Progressive Enhancement of older browser features
+        
+        Javascript
+        
+          at minimum Using unobtrusive jQuery +  plugins for affects
+         
+          if doing something heavily Ajax then using a Javascript MVC frameworks
+          
+          http://blog.stevensanderson.com/2012/08/01/rich-javascript-applications-the-seven-frameworks-throne-of-js-2012/?utm_source=javascriptweekly&utm_medium=email 
+    
+     The Middle 
+     
+        consuming and emitting RESTful web services and JSON
+        
+        Distributed Version Control using Git, with offsite source control on GitHub.
+        
+        using SASS to create my CSS
+        
+        Developing in a MVC framework in a programming language in Ruby (Ruby on Rails), Python, PHP (Cake), Javascript (Node)  
+    
+        the Views may be built in embedded language pages HTML markup 
+            Java (.jsp), Ruby (.erb) , PHP (.php) , c# (.asp)
+         or they use a Logic-less Template (Mustache, Handlebars, Closure Templates )
+         
+         Handlebars Js example
+         
+         combine : 
+         
+	     <div class="entry">
+  		   <h1>{{title}}</h1>
+  		   <div class="body">
+    		  {{{body}}}
+  		   </div>
+	     </div>
+	      and this data context :
+	      
+	      {
+             title: "All about <p> Tags",
+             body: "<p>This is a post about &lt;p&gt; tags</p>"
+           }
+	
+	      and get :
+	      
+	      <div class="entry">
+             <h1>All About &lt;p&gt; Tags</h1>
+             <div class="body">
+                <p>This is a post about &lt;p&gt; tags</p>
+             </div>
+         </div>
+         
+         Profit!
+         
+         
+           http://engineering.linkedin.com/frontend/client-side-templating-throwdown-mustache-handlebars-dustjs-and-more
+           http://engineering.linkedin.com/frontend/leaving-jsps-dust-moving-linkedin-dustjs-client-side-templates
+            
+    
+           
+        back back end
+        
+        deploying to a linux server on Amazon EC2 or lnode or vps.net or using a PASS vendor like Heroku
+           with a capistrano script
+        using MySql or (increasingly) PostGreSQL  as a relational db
+           or a NoSQL ("not only SQL") db like MongoDB; Cassandra (Facebook); Hadoop (Google)
+        
+        running on SSD servers for high performance and low power
+        
+        DevOps
+            
+             controlling all elements of a technology infrastructure making it Repeatable Testable Scalable 
+             i.e. automating Development, Operations and QA in order to reduce risk, release frequent and smaller changes, of a higher quality              
+        
+             a core tool is the use of configuration management software like : 
+             puppet http://puppetlabs.com/ 
+             chef http://www.opscode.com/chef/
+             Pallet (runs on the JVM) http://palletops.com/
+             
+             allows consistent environments across development,QA/Staging, production. 
+             
+            http://www.wired.com/wiredenterprise/2011/10/chef_and_puppet/ 
+        
+        Vagrant http://vagrantup.com/
+            uses Oracle’s VirtualBox to build configurable, lightweight, and portable virtual machines, then uses Chef or Puppet to provision them.
+            to onboard developers and provision development environments quickly. (1/2 hour)
+            allows consistent development environments. 
+        
