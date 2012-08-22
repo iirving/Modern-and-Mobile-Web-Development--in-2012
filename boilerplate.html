@@ -31,17 +31,6 @@
 
 <!-- Begin slides. Just make elements with a class of slide. -->
 
-<section class="slide">
-	<h1>Slide</h1>
-</section>
-
-<section class="slide">
-	<h1>Content</h1>
-</section>
-
-<section class="slide">
-	<h1>Here</h1>
-</section>
 
 <section class="slide">
 	<h2>Modern and Mobile Web Development, in 2012</h2>
@@ -52,17 +41,31 @@
 				<p>GitHub https://github.com/iirving
 </section>
 <section class="slide">
-	<blockquote>
-			 Good judgement is the result of experience ... 
-			 <p class="slide">Experience is the result of bad judgement. </p>
-			 <cite><a href="http://en.wikipedia.org/wiki/Fred_Brooks">Fred Brooks</a>, The Mythical Man-Month: Essays on Software Engineering
-			 </cite>
+	<h2>History</h2>
+	<blockquote class="slide">
+			 <p >Good judgement is the result of experience ... </p>
+			 <p class="slide">Experience is the result of bad judgement. </br>
+			 <cite><a href="http://en.wikipedia.org/wiki/Fred_Brooks">Fred Brooks</a>,<br>The Mythical Man-Month: Essays on Software Engineering
+			 </cite><p>
 	</blockquote>
 
 </section>
 <section class="slide">
-			<h2>CSS (Cascading Style Sheets) : Getting Presentation out of Content.</h2>
-			<p >By 1999 we -I- had moved our Typographical information out of the HTML and into embedded or in a linked CSS files</p>
+			<h2>CSS : Pre History</h2>
+			<p>Prior to CSS (Cascading Style Sheets), nearly all of the presentational attributes of HTML documents were contained within the HTML markup.</p>
+			<p class="slide">All font, colors, font colors, background styles, element alignments, borders and sizes had to be explicitly described, <strong>repeatedly</strong>, within the HTML.</p>
+			<p class="slide">It was a MESS!</p>
+</section>			
+<section class="slide">
+	<h2>CSS (Cascading Style Sheets) : Pre History</h2>
+	<p class="">A REALLY BIG MESS!</p>
+	<pre class="slide"><code>
+		&lt;P LANG="en-US" CLASS="western" ALIGN=LEFT&gt;&lt;FONT FACE="Times New Roman, serif"&gt;&lt;FONT SIZE=2&gt;Blog&lt;/FONT&gt;&lt;FONT SIZE=2&gt; &lt;/FONT&gt;&lt;FONT SIZE=2&gt;:&lt;/FONT&gt;&lt;FONT SIZE=2&gt; &lt;/FONT&gt;&lt;FONT COLOR="#000080"&gt;&lt;U&gt;&lt;A HREF="http://www.FalsePositives.com/"&gt;&lt;FONT SIZE=2&gt;http://www.FalsePositives.com&lt;/FONT&gt;&lt;/A&gt;&lt;/U&gt;&lt;/FONT&gt;&lt;/FONT&gt;&lt;/P&gt; &lt;P LANG="en-US" CLASS="western"&gt;&lt;FONT COLOR="#000080"&gt;&lt;FONT COLOR="#000000"&gt;&lt;FONT SIZE=2&gt;&lt;SPAN STYLE="text-decoration: none"&gt;LinkedIn&lt;/SPAN&gt;&lt;/FONT&gt;&lt;/FONT&gt;&lt;/FONT&gt;&lt;FONT COLOR="#000080"&gt;&lt;U&gt;&lt;FONT FACE="Times New Roman, serif"&gt;&lt;FONT SIZE=2&gt; &lt;/FONT&gt;&lt;/FONT&gt;&lt;/U&gt;&lt;/FONT&gt;&lt;FONT COLOR="#000080"&gt;&lt;U&gt;&lt;FONT FACE="Times New Roman, serif"&gt;&lt;FONT SIZE=2&gt;:&lt;/FONT&gt;&lt;/FONT&gt;&lt;/U&gt;&lt;/FONT&gt;&lt;FONT COLOR="#000080"&gt;&lt;U&gt;&lt;FONT FACE="Times New Roman, serif"&gt;&lt;FONT SIZE=2&gt; &lt;/FONT&gt;&lt;/FONT&gt;&lt;/U&gt;&lt;/FONT&gt;&lt;FONT COLOR="#000080"&gt;&lt;U&gt;&lt;FONT FACE="Times New Roman, serif"&gt;&lt;FONT SIZE=2&gt;http://www.linkedin.com/in/ianairving&lt;/FONT&gt;&lt;/FONT&gt;&lt;/U&gt;&lt;/FONT&gt;&lt;/P&gt; &lt;P LANG="en-US" CLASS="western" ALIGN=LEFT&gt;&lt;FONT FACE="Times New Roman, serif"&gt;&lt;FONT SIZE=2&gt;&lt;FONT COLOR="#000080"&gt;&lt;FONT COLOR="#000000"&gt;&lt;SPAN STYLE="text-decoration: none"&gt;GitHub:&lt;/SPAN&gt;&lt;/FONT&gt;&lt;/FONT&gt;&lt;FONT COLOR="#000080"&gt;&lt;U&gt; &lt;/U&gt;&lt;/FONT&gt;&lt;FONT COLOR="#000080"&gt;&lt;U&gt;&lt;A HREF="http://github.com/iirving"&gt;http://github.com/iirving&lt;/A&gt;&lt;/U&gt;&lt;/FONT&gt;&lt;/FONT&gt;&lt;/FONT&gt;&lt;/P&gt; &lt;P LANG="en-US" CLASS="western" ALIGN=LEFT&gt;&lt;BR&gt;
+	</code></pre>
+</section>
+<section class="slide">
+			<h2>CSS : Getting Presentation out of Content.</h2>
+			<p >By 1999 all of that out of the HTML and into embedded CSS or in a linked CSS files</p>
 			<p >so the markup no longer had a thousand references to FONT and COLOR.</p>
 			<p class="slide">which was a big improvement, more maintainable, smaller, easier to debug. </p>
        
@@ -70,7 +73,7 @@
 
 <section class="slide">
 	<h2>CSS : Table Driven Layout </h2>
-	<em>But</em> we built the static layouts with html Tables</p><pre class="slide"><code>
+	<em>But</em> we still built the static layouts with html Tables</p><pre class="slide"><code>
 &lt;table&gt; 
 	&lt;tr&gt;	&lt;td colspan=3&gt;Header&lt;/td&gt;	&lt;/tr&gt; 
 	&lt;tr&gt;	&lt;td colspan=3&gt;Top Nav&lt;/td&gt;	&lt;/tr&gt; 
@@ -78,7 +81,7 @@
 		&lt;td width="100px"&gt;Secondary Nav&lt;td&gt; 
 		&lt;td&gt;Content&lt;/td&gt; &lt;td&gt;possible side bar&lt;/td&gt; 
 	&lt;/tr&gt; 
-	&lt;tr&gt;&lt;td colspan=3&gt;Footer&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr&gt;	&lt;td colspan=3&gt;Footer&lt;/td&gt;	&lt;/tr&gt;
 &lt;/table&gt;
 	</code></pre>
 </section>
@@ -86,24 +89,23 @@
 
 <section class="slide">
 	<h2>CSS : Table Driven Layout </h2>
-	And we used table layout in lining up FORM elements with their labels.<pre class="slide"><code>
-&lt;table&gt; 
-	&lt;tr&gt; 
+	And we used table layout in lining up FORM elements with their labels. (<em>Inside<em> the content cell of another table!)
+	<pre class="slide"><code>
+&lt;table&gt; &lt;tr&gt; 
 		&lt;td&gt;&amp;nbsp&lt;/td&gt; 
 		&lt;td &gt;Name: &lt;/td&gt; 
 		&lt;td&gt;&lt;input type="text"&gt;&lt;/td&gt; 
-	&lt;/tr&gt; 
-	&lt;tr&gt; 
+&lt;/tr&gt; 	&lt;tr&gt; 
 		&lt;td&gt;&amp;nbsp&lt;/td&gt; 
 		&lt;td &gt;Company: &lt;/td&gt; 
 		&lt;td&gt;&lt;input type="text"&gt;&lt;/td&gt; 
-	&lt;/tr&gt; 
+&lt;/tr&gt; 
 &lt;/table&gt;</code></pre>
 </section>
 
 <section class="slide">
 	<h2>CSS : Table Driven Layout </h2>
-	<p>There were a raft of problems of using Tables for layout structure:</p>
+	<p><em>But</em>, there were a raft of problems of using Tables for layout structure:</p>
 	<ul>
 		<li class="slide">a rats net of nested tables</il>
 		<li class="slide">the page didn't load until the whole table was rendered.</il>
@@ -117,42 +119,81 @@
 </section>
 
 <section class="slide">
-		<h2>CSS : Grids to the rescure</h2>
-		<p>Grids offered a solution for layout that got the structure out of the html markup</p>
-		<p >2001    http://www.alistapart.com/articles/practicalcss/ Tables are Dead... and From Table Hacks to CSS Layout: A Web [Designer’s Journey (2001)](http://www.alistapart.com/articles/journey/)
-		</p>
+		<h2>CSS : Grids to the rescue</h2>
+		<p>Grids offered a solution for layout that got the structure out of the html markup : 
+		<p>See <a href=">http://www.alistapart.com/articles/practicalcss/">From Table Hacks to CSS Layout: A Web Designer’s Journey</a> </p>
+		<p class="silde">And they offered a strong Visual Design Language from a years of print layout: <a href="http://www.smashingmagazine.com/2007/04/14/designing-with-grid-based-approach/">Designing With Grid-Based Approach</a> </p>
 		<p >shown some fragment image</p>
 
 </section>
-<section class="slide"><h2>CSS : Grids to the rescure</h2>
+<section class="slide"><h2>CSS : Grids to the rescue</h2>
 
-	<p >This was a a big improvement.</p>
-	<p >why?? explan!!</p>
-	<p > and allowed some things that where not possible with table driven layout
-	 Show some [CSS Zen Garden Layouts](http://www.csszengarden.com/) </p>
+	<p >This was a a <strong>BIG</strong> improvement.</p>
+	<p class="side">We now had much cleaner HTML markup and all our Layout where in the CSS </p>
+	<p class="side">and allowed some things that where not possible with table driven layout
+	 Show some as demonstrated by the <a href="http://www.csszengarden.com/">CSS Zen Garden</a> </p>
 </section>
 
-<section class="slide"><h2>CSS : and along came frameworks</h2>
+<section class="slide">
+	<h2>CSS : and along came frameworks</h2>
+	<p>The other thing that allowed for a rapid embrace of Grid based layouts was the emergence of CSS Frameworks</p>
+	<p> They allowed for easier, more standards-compliant styling of web pages using best practices</p>
+	<ul>
+		<li class="slide">A easy to use grid</il>
+  		<li class="slide">A Sensible default typography and styling baseline</li>
+    	<li class="slide">A  browser CSS reset.</il>
+    	<li class="slide">A stylesheet for printing</li>
+	</ul>
+
+</section>
+
+<section class="slide">
+	<h2>CSS : and along came frameworks</h2>
+	<p>and the biggest difference between Frameworks being the size of the grid (920px, 1024px 1140px were commonly used ) and the number of columns (4 or 12 or 16 ).
+	<p class="side">and there are even grid generators:
+	<p class="slide">plug in your total width, and number of max number of columns and BINGO!</p>
+	<p class="slide"> U Haz Layout</p>
+	<p class="slide">They all help you development the layout and style of your sites with a foundation of best practices, quickly.</p>
+	<p class="slide">The <a href="http://blueprintcss.org/">BluePrint http://blueprintcss.org/</a> come out in 2007 and I started using it right away 
+	<p>
+	<p class="slide">But these were still Static grids!</p> 
+
 </section>
 
 
 <section class="slide">
-	<h2>CSS : elastic design </h2>
+	<h2>CSS : Elastic Design </h2>
 	<p>Now there had been some crazy people as far back as 2001 and 2002 who talked about "elastic design" 
-	[flexiblelayouts](http://www.alistapart.com/articles/flexiblelayouts/) for example
-	[Dug Falby](http://www.donkeyontheedge.com/ala.html)  or [Eric Costello](http://glish.com/css/)</p>
-<p >But they were ignored by clients and developers, because:</p>
+	<p class="slide"> Like  <a href="http://www.donkeyontheedge.com/ala.html">Dug Falby</a> in <a href="http://www.alistapart.com/articles/flexiblelayouts/">A List Apart : Flexible Layouts</a> , and <a href="http://glish.com/css/">Eric Costello</a>
+<p class="slide">But they were ignored, because:</p>
 <ul>
 	<li class="slide">everyone had larger and larger laptop screens (17") or desktop monitors (+23")</li>
 	<li class="slide">we where still thinking static or even print layouts</il>
    	<li class="slide">they seemed like a lot of work to implement</a>
 </ul>
-<p>   </p>
-<p class="slide">So they were largerly ignored</p>
-<p class="slide">meanwhile ...</p>
+<p> 
+<p class="slide">So they were largely ignored</p>
+<p class="slide">Until ...</p>
 </section>
 
-<section class="slide"><h2>CSS : They Arrvied</h2>
+<section class="slide"><h2>CSS : They Arrived</h2>
+	in 2007, January 9,  Steve Jobs introduced the iPhone and everything changed
+	
+	Image of Steve Jobs on stage with iPhone
+
+	<p class="slide">and suddenly those layouts that worked on a 17" laptop didn't look so hot :(</p>
+	<p class="slide">and then the Android devices,</p>
+	<p class="slide">and the iPad</p>
+	<p class="slide">So how do you developed a web site that "works" on all those layouts without going crazy? </p>
+
+    <p class="slide">(insert here graphic of Ian pulling out the rest of his hair)</p>
+    <p class="slide">Now round this time CSS3 was showing up in Chrome. Firefox and Safari 
+	<p class="slide"> CSS 3 Media Queries (are an extension of @media rules previously used to create print only CSS)</p>
+	<p class="slide">And this gave us a way out</p>
+
+</section>
+<section class="side">
+
 </section>
 
 
