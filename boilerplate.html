@@ -36,14 +36,20 @@
 <!-- Begin slides. Just make elements with a class of slide. -->
 
 
+<section class="slide">
+	<h1>Modern and Mobile Web Development</h1>
+</section>
 
 <section class="slide">
 	<h2>Modern and Mobile Web Development</h2>
 			<h3>Ian Irving</h3>
-				<p><a href="http://www.FalsePositives.com">www.FalsePositives.com</a></h3>
-				<p><a href="http://www.ConnectedThinking.com">www.ConnectedThinking.com</a>
-				<p><a href="https://twitter.com/ianirving">Twitter @IanIrving</a>
-				<p><a href="https://github.com/iirving">GitHub https://github.com/iirving</a>
+			<ul>
+				<li>Blog : <a href="http://www.FalsePositives.com">www.FalsePositives.com</a></li>
+				<li>Work : <a href="http://www.ConnectedThinking.com">www.ConnectedThinking.com</a></li>
+				<li>Twitter : <a href="https://twitter.com/ianirving">@IanIrving</a></li>
+				<li>GitHub : <a href="https://github.com/iirving">https://github.com/iirving</a></li>
+				<li>Email : <a href="mailto:Ian@FalsePositives.com">Ian@FalsePositives.com<a></li>
+			</ul>
 </section>
 
 <section class="slide">
@@ -75,7 +81,7 @@
 
 <section class="slide">
 			<h2>CSS : Getting Presentation out of Content.</h2>
-			<p >By 1999 all of that out of the HTML and into embedded CSS or in a linked CSS files</p>
+			<p >By 1999 I was moving all of that out of the HTML and into embedded CSS or in a linked CSS files</p>
 			<p >so the markup no longer had a thousand references to FONT and COLOR.</p>
 			<p class="slide">which was a big improvement, more maintainable, smaller, easier to debug. </p>
        
@@ -83,7 +89,7 @@
 
 <section class="slide">
 	<h2>CSS : Table Driven Layout </h2>
-	<em>But</em> we still built the static layouts with html Tables (<a href="old.html">old</a>)</p>
+	<p><strong>But</strong> we still built the static layouts with html Tables (<a href="old.html">old</a>)</p>
 	 <pre class="slide"><code>
 &lt;table width="960px" border="1"&gt;
   &lt;tr&gt;
@@ -100,13 +106,13 @@
   &lt;tr&gt;&lt;td colspan=3&gt;Footer&lt;/td&gt;&lt;/tr&gt;
 &lt;/table&gt;
 </code></pre>
-<p class="slide">I felt dirty just writing that</p>
+<p class="slide">(I felt dirty writing that)</p>
 </section>
 		
 
 <section class="slide">
 	<h2>CSS : Table Driven Layout </h2>
-	And we used table layout in lining up FORM elements with their labels. (<em>Inside</em> the content cell of another table!) (<a href="old2.html">old2</a>)
+	<p>And we used table layout in lining up FORM elements with their labels. (<em>Inside</em> the content cell of another table!) (<a href="old2.html">old2</a>)</p>
 	<pre class="slide"><code>
 &lt;td&gt;Content
 	&lt;table&gt; 
@@ -128,25 +134,38 @@
 
 <section class="slide">
 	<h2>CSS : Table Driven Layout </h2>
-	<p><em>Why was this a problem? There were a raft of problems of using Tables for layout structure:</p>
+	<p>There were a raft of problems of using Tables for layout structure:</p>
 	<ul>
 		<li class="slide">a rats net of nested tables</il>
 		<li class="slide">the page didn't load until the whole table was rendered.</il>
 		<li class="slide">hard to modify the content or structure</il>
 	</ul>
 
-	<p> </p>
-	<p class="slide">there was a solution in hand,  
-	<p class="slide">(even if it took many years for us to integrate it into our development practices)
+	<p class="slide">there was a solution in hand,  </p>
+	<p class="slide">(even if it took many years for us to integrate it into our development practices) </p>
 
 </section>
 
 <section class="slide">
 	<h2>CSS : Grids to the rescue</h2>
-	<p>Grids offered a solution for layout that got the structure out of the html markup : 
-	<p>See <a href=">http://www.alistapart.com/articles/practicalcss/">From Table Hacks to CSS Layout: A Web Designer’s Journey</a> </p>
-	<p class="silde">And they offered a strong Visual Design Language from a years of print layout: <a href="http://www.smashingmagazine.com/2007/04/14/designing-with-grid-based-approach/">Designing With Grid-Based Approach</a> </p>
-	<p class="slide">(<a href="css1.html">css1</a>)</p>
+	<p>Grids offered a solution for layout that got the structure out of the html markup : </p>
+	<p class="slide">See <a href="http://www.alistapart.com/articles/practicalcss/">From Table Hacks to CSS Layout: A Web Designer’s Journey</a> </p>
+
+	<p class="slide">And they offered a strong Visual Design Language from a years of print layout: 
+		<a href="http://www.smashingmagazine.com/2007/04/14/designing-with-grid-based-approach/">Designing With Grid-Based Approach</a> 
+	</p>
+    <p class="slide">In fact by building around the Golden Ratio (Phi = 1.61) you can archive an aesthetically pleasing, balanced, layout!</p>
+
+	<p class="slide"><img class="" src="image/nettuts-grid.jpeg"></p>
+	<p class="slide"><a href="http://net.tutsplus.com/tutorials/other/the-golden-ratio-in-web-design">The Golden Ratio in Web Design</a></p>
+
+</section>
+
+</section>
+<section class="slide">
+	<h2>CSS : Grids to the rescue</h2>
+
+	<p class="slide">Even a basic application to our old table drive Layout resulted in (<a href="css1.html">css1</a>) cleaner html.</p>
 	<pre class="slide"><code>
 &lt;div id="content" class="article span-14 append-3"&gt;
 	&lt;div class="span-14"&gt;Content&lt;/div&gt;
@@ -162,14 +181,11 @@
 	&lt;/div&gt;    
 &lt;/div&gt;
 	</code></pre>
-</section>
 
-</section>
-<section class="slide"><h2>CSS : Grids to the rescue</h2>
-
-	<p >This was a a <strong>BIG</strong> improvement.</p>
-	<p class="side">We now had much cleaner HTML markup and all our Layout in the CSS </p>
-	<p class="side">and that allowed some things that where not possible with table driven layout as demonstrated by the <a href="http://www.csszengarden.com/">CSS Zen Garden</a> </p>
+	<p class="slide">This was a a <strong>BIG</strong> improvement.</p>
+	<p class="slide">We now had much cleaner HTML markup and all our Layout in the CSS </p>
+	<p class="slide">and that allowed some things that where not possible with table driven layout as demonstrated by the 
+		<a href="http://www.csszengarden.com/">CSS Zen Garden</a> </p>
 </section>
 
 <section class="slide">
@@ -194,21 +210,23 @@
 	<p class="slide">They <STRONG>ALL</STRONG> help you development the layout and style of your sites with a foundation of best practices, quickly.</p>
 	<p class="slide">When the <a href="http://blueprintcss.org/">BluePrint http://blueprintcss.org/</a> framework come out in 2007, I started using it right away 
 	<p></br>
-	<p class="slide"><strong>BUT</strong>,these were still Static grids!</p> 
-
+	<p class="slide"><strong>BUT</strong>, these were still Static grids!</p> 
 </section>
 
 
 
 <section class="slide">
 	<h2>CSS : Elastic Design </h2>
-	<p>Now there had been some crazy people as far back as 2001 and 2002 who talked about "elastic design" 
-	<p class="slide"> Like  <a href="http://www.donkeyontheedge.com/ala.html">Dug Falby</a> in <a href="http://www.alistapart.com/articles/flexiblelayouts/">A List Apart : Flexible Layouts</a> , and <a href="http://glish.com/css/">Eric Costello</a>
+	<p>Now there had been some crazy people as far back as 2001 and 2002 who talked about "elastic design"</p> 
+	<p class="slide"> Like  
+		<a href="http://www.donkeyontheedge.com/ala.html">Dug Falby</a> in 
+		<a href="http://www.alistapart.com/articles/flexiblelayouts/">A List Apart : Flexible Layouts</a> , and 
+		<a href="http://glish.com/css/">Eric Costello</a>
+	</p>
 <p class="slide">But they were ignored, because:</p>
 <ul>
-	<li class="slide">everyone had larger and larger laptop screens (17") or desktop monitors (+23")</li>
-	<li class="slide">we where still thinking static or even print layouts</il>
-   	<li class="slide">they seemed like a lot of work to implement</a>
+	<li class="slide">Everyone had larger and larger laptop screens (17") or desktop monitors (+23")</li>
+	<li class="slide">We where still thinking static or even print layouts</il>
 </ul>
 <p> 
 <p class="slide">So they were largely ignored</p>
@@ -253,22 +271,31 @@
 	    </li>
 	</ul>
 
-	<p class="slide"><a href="http://mediaqueri.es/">Media Queries</a> to see want is being done</p>
+	<p class="slide">Look at <a href="http://mediaqueri.es/">Media Queries</a> to see want is being done</p>
 
 <p class="slide">First Rate HTML5 Responsive Frameworks include</p>
 <ul class="slide">
- <li> <a href="http://html5boilerplate.com/">HTML5 Boilerplate</a>  </li>
- <li><a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a>  </li>
- <li><a href="http://stuffandnonsense.co.uk/projects/320andup/">320 and up</a>    </li>
-
+	 <li><a href="http://html5boilerplate.com/">HTML5 Boilerplate</a>  </li>
+	 <li><a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a>  </li>
+	 <li><a href="http://stuffandnonsense.co.uk/projects/320andup/">320 and up</a>    </li>
 </ul>
- <p class="slide">More Reading</p>
-<ul class="slide">
- <li>
- <a href="http://www.alistapart.com/articles/responsive-web-design/">A List Apart : Responsive Web Design</a></li>
- <li><a href="http://blogs.msdn.com/b/cdndevs/archive/2012/02/15/what-the-heck-is-responsive-web-design.aspx">What the heck is Responsive Web Design?</a></li>
- <li><a  href="https://developers.facebook.com/html5/blog/post/4/">Responsive Design Essentials: Look Great on any Device</a></li>
 
+
+<p class="slide">if you don't find want your looking for there, then see :
+	<a href="http://speckyboy.com/2011/11/17/15-responsive-css-frameworks-worth-considering">15 Responsive CSS Frameworks Worth Considering</a>
+</p>
+
+ <p class="slide">For More Reading</p>
+
+<ul class="slide">
+	 <li>
+	 	<a href="http://www.alistapart.com/articles/responsive-web-design/">A List Apart : Responsive Web Design</a></li>
+	 <li>
+	 	<a href="http://blogs.msdn.com/b/cdndevs/archive/2012/02/15/what-the-heck-is-responsive-web-design.aspx">What the heck is Responsive Web Design?</a>
+	 </li>
+	 <li>
+	 	<a  href="https://developers.facebook.com/html5/blog/post/4/">Responsive Design Essentials: Look Great on any Device</a>
+	 </li>
 </ul>
 	
 </section>
@@ -277,29 +304,67 @@
 <section class="slide">
 	<h2>CSS : Responsive Design Challenges</h2>
 
- Responsive Navigation
+ <h2>Responsive Navigation</h2>
+
+	 <p class="slide">One of the trickiest parts to be "responsified" on a website is “The Navigation”</p>
+	 <p class="slide">It's also the most important.</p>
+
+	 <p class="slide">for the smaller width screens Navigation is quickly refined to either a drop down or becomes the primary content in the form of a Vertical List or a Flexible Grid</p>
+
+	 <p class="slide">Here's a good guide of Patterns and Tutorials for Responsive Navigation</p>
+	    <ul class="slide">
+	    <li>   
+	            <a href="http://bradfrostweb.com/blog/web/responsive-nav-patterns/">Responsive Navigation Patterns</a>
+	      </li>  
+	      	 <li>  
+	            <a href="http://coding.smashingmagazine.com/2012/02/13/progressive-and-responsive-navigation/">Progressive And Responsive Navigation</a>
+	             </li>  
+	             	 <li>  
+	            <a href="http://webdesignerwall.com/tutorials/mobile-navigation-design-tutorial">Mobile Navigation Design & Tutorial</a>
+	 </li>  
+	 	<li><a href="http://www.vanseodesign.com/web-design/responsive-navigation-patterns/">7 Responsive Navigation Patterns</a>
+	 	</li>
+	 </ul>
+
+	 <p class="slide">You need to develop a approach that works for your audience and content.</p>
+
+
+</section>
+
+
+<section class="slide">
+	<h2>CSS : Responive Desgin Challenges</h2>
+
+  <h2>Progressive disclosure</h2>
+  	<p class="slide">One approach to build mobile only websites is to show only that content that is of interest to mobile users.</p>
+  	<p class="slide">I strongly believe that is wrong.</p>
+    <p class="slide">Users are Users</p>
+    <p class="slide">What you do need is to show only the essential information, or most important options, in the each step and then invite users to take the next step.</p>
+    <p class="slide">When the user completes a step, you reveal the information in the next step, possibly keeping all previous steps visible. <p>
+    <p class="slide">Sometimes you can do this with Accordion Boxes, or just a simple "Next", or an Advanced Option.</p>
+</br>
+    <p class="slide">Another "Progressive disclosure" pattern is "infinite scrolling" where content is continuously added to the bottom of a list, without an explicit reload or refresh</p>
+
+ <p class="slide"><a href="http://teamtreehouse.com/blog/read-more-about-progressive-disclosure">Read more … about progressive disclosure</a></p>
+
        
-            http://bradfrostweb.com/blog/web/responsive-nav-patterns/
-            
-            http://webdesignerwall.com/tutorials/mobile-navigation-design-tutorial
-
 
 </section>
 
-<section class="slide">
-	<h2>CSS : Responive Desgin Challenges</h2>
-
-  Progressive disclosure
-         http://webcloud.se/jQuery-Collapse/
-
-</section>
 
 <section class="slide">
 	<h2>CSS : Responive Desgin Challenges</h2>
+	<h2>Finger friendly</h2>
+
+<p class="slide">Fingers are bigger than Mouse Pointers!!</a>	
+
+<p class="slide">On any Mobile device:  Make clickable elements big enough for a fingertip
+<p class="slide"> ≈ 44px x 44px are Apple’s guidelines for *minimum* touch target sizes</p>
+  
 
 
- Making Actions and Inputs finger friendly
-       http://uxdesign.smashingmagazine.com/2012/02/21/finger-friendly-design-ideal-mobile-touchscreen-target-sizes/
+
+ <p class="slide"><a href="http://uxdesign.smashingmagazine.com/2012/02/21/finger-friendly-design-ideal-mobile-touchscreen-target-sizes/"> Making Actions and Inputs finger friendly</a>
 
 
             
@@ -545,20 +610,28 @@ border: 2px $blue solid;    }
 	<h2>JavaScript : and along came jQuery</h2>
 
 	  <p> jQuery also popularized unobtrusive JavaScript : </p>
-	</br>
+	
        
-   <p>Just as CSS allowed us to remove layout from the markup, unobtrusive JS allows you to separation of functionality (the "behavior layer") from a Web page's structure/content and presentation,  rather than lots of inline javaScript:  </p>
-<code class="slide"><pre>
+   <p class="slide">Just as CSS allowed us to remove layout from the markup, unobtrusive JS allows you to separation of functionality (the "behavior layer") from a Web page's structure/content and presentation,  rather than lots of inline javaScript:  </p>
+
+<div class="slide">
+<code class=""><pre>
    &lt;input Tycope="text" name="date" onchange="validateDate()" /&gt;
- </pre></code>       
+ </pre></code>  
+ </div>    
+
  <p class="slide">you do more of :</p>
- <code class="slide"><pre> 
+<div class="slide">
+ <code class=""><pre> 
  &lt;input type="text" name="date" id="date" /&gt;    
  window.onload = function() {
     document.getElementById('date').onchange = validateDate;
 };     
 </pre></code>
- <p class="slide">Which can go in a separate file.  Much better!</p>
+</div>
+
+
+ <p class="slide">Which can now go in a separate, JavaScript, file.  Much better!</p>
 </section>
 
 
@@ -580,7 +653,8 @@ border: 2px $blue solid;    }
    <section class="slide">
 	<h2>JavaScript : AJAX</h2>
 <p class="slide">with Prototype and jQuery it became practical to do browser-independent Ajax queries using $.ajax and associated methods to load and manipulate remote data.    </p>
-     <code class="slide"><pre> 
+<div class="slide">
+     <code class=""><pre> 
     $.ajax({
  		 type: "POST",
  		 url: "example.php",
@@ -590,6 +664,7 @@ border: 2px $blue solid;    }
   		}
 	}); 
 	</pre></code>
+</div>
 
 	<p class="slide">and so we did!</p>
 
@@ -603,7 +678,8 @@ border: 2px $blue solid;    }
 	<h2>JavaScript : JSON</h2>
 
 <p>along came JavaScript Object Notation (actually it's been around since 2001)  which is intended as a data serialization format</p>
-	<code class="slide"><pre> 	
+<div class="slide">
+	<code class=""><pre> 	
 {
     "firstName": "John",
     "lastName": "Smith",
@@ -616,6 +692,7 @@ border: 2px $blue solid;    }
     }
 }
 </pre></code>	    
+</div>
 <p class="slide">  which turned out to be really usefully for doing AJAX
   
   Web browsers now either have or are working on native JSON encoding/decoding. 
@@ -666,7 +743,20 @@ border: 2px $blue solid;    }
 
 </section>
 
+<section class="slide">
+	<h2>JavaScript : jQuery Mobile</h2>
 
+	<p><a href="http://jquerymobile.com/">jQuery Mobile</a> is a touch-optimized web framework being developed by the jQuery team. </p>
+
+	<p class="">It is HTML5-driven configuration for laying out pages with minimal scripting</p>
+	<p>It has Ajax-powered navigation with animated page transitions that provides ability to clean URLs through pushState.</p>
+	<p> It has UI widgets that are touch-optimized and platform-agnostic, although very iOs centric</p> 
+
+	<p class="slide">See the <a href="http://www.jqmgallery.com/">Gallery</a> for sites built on jQuery Mobile, and 
+		<a href="http://www.jquery4u.com/mobile/50-jquery-mobile-development/">jQuery Mobile Development Tips</a> for more help</p>
+
+
+</section>
 
 <section class="slide">
 	<h2>HTML5</h2>
@@ -676,7 +766,7 @@ border: 2px $blue solid;    }
 		<ul class="slide">
 
 	<li>Semantic Markup for meaningful structure like Nav; Footer; Section</li>
-		<li>Multimedia: and New media elements (Vdeo; Audio)</li>
+		<li>Multimedia: and New media elements : Video; Audio </li>
 		<li>OffLine & Storage API's : App Cache, the Local Storage, Indexed DB, and the File API specifications.</li>
 		<li>Device Access API's : device access awareness for Geolocation, audio/video input access from microphones and cameras, tilt orientation.</li>
 		<li>Connectivity API's: real-time chats, faster games, and better communication with Web Sockets.</li>
@@ -684,6 +774,7 @@ border: 2px $blue solid;    }
 		<li>Performance & Integration : Web Workers and XMLHttpRequest 2</li>
 		<li>CSS3 : new stylization and effects</li>
 		<li>Web Open Font Format (WOFF) for typographic flexibility</li>
+		<li>New Input Types : color; datetime; email; number; range; tel; time</li>
 </ul>
 </p>
 
@@ -707,6 +798,8 @@ border: 2px $blue solid;    }
 <h2>The Web App Dev Stack : Front End</h2>
             
       <p class="slide">HTML5 + CSS 3</p>
+
+      <p class="slide">Developing for Chrome, Safari, FireFox, Opera, IE 10</a>
          
          <p class="slide">using a responive HTML5 css framework <a href="http://html5boilerplate.com/">HTML5 Boilerplate</a> </p>
           
@@ -718,7 +811,11 @@ border: 2px $blue solid;    }
          
          <p class="slide">if doing something heavily Ajax then using a Javascript MVC </p>
 
-   <p class="slide">Using your Browser-based development tools</p>
+   <p class="slide">Use your Browser-based development tools</p>
+
+   <p class="slide">Use VM's to test against IE 6/7/8</p>
+
+   <p class="slide">Build on OSx, Deploy to Linux, and (only if you must) test on Windows</p>
 
           
 
@@ -825,9 +922,7 @@ border: 2px $blue solid;    }
 
 
 
-  <p class="slide">Make clickable elements big enough for a fingertip, ≈44px x 44px : Apple’s guidelines for *minimum* touch target sizes
-  you can make them bigger on bigger screens
-  If you make it hard for user to user your system, they wouldn't </p>
+  <p class="slide"> If you make it hard for User to use your system, they wouldn't </p>
   
   <p class="slide">Don’t use hover states in css or mouse over in JavaScript.  They don't work on mobile.
 
@@ -885,11 +980,29 @@ REMEMBER
    <li class="slide"> Disagreements happen and implementations change but keep learning.</li>
    <li class="slide"> The Goal is to make something so useable that people on the Laptops / Desktops prefer your implementation over the "standard one", until it becomes the only one.</li>
 </ul>
-    </section>     
+    </section> 
+
+    <section class="slide">
+ 	<h2>Read, Learn</h2>
+
+<ul >  
+           <li>
+           	<a href="https://developer.mozilla.org/en-US/">Mozilla Developer Doc's<a></li>
+ 		
+<li><a href="http://paulirish.com/">Paul Irish's blog</a>
+
+	<li> <a href="http://www.alistapart.com/">A List Apart</a> </li>
+
+	<li> <a href="http://www.smashingmagazine.com/">Smashing Magazine</a> </li>
+
+<li> <a href="http://www.webmonkey.com/">Web Monkey</a> </li>
+
+</ul>
+
+ </section>         
 
  <section class="slide">
  	<h1>Thank You<h1>
-
 
 
  </section>     
@@ -940,11 +1053,13 @@ REMEMBER
 
 <script src="extensions/navigation/deck.navigation.js"></script>
 <script src="extensions/scale/deck.scale.js"></script>
--->
 
-<script src="extensions/goto/deck.goto.js"></script>g79
+-->
+<script src="extensions/goto/deck.goto.js"></script>
+
 <script src="extensions/status/deck.status.js"></script>
-<!-- Initialize the deck. You can put this in an external file if desired. -->
+<!-- Initialize the deck. You can put this in an external file if desired.  -->
+
 <script>
 	$(function() {
 		$.deck('.slide');
