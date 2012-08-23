@@ -5,7 +5,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=1024, user-scalable=no">
 
-	<title>Your deck.js Presentation</title>
+	<title>Modern and Mobile Web Development</title>
+	<META NAME="AUTHOR" CONTENT="Ian Irving www.FalsePositives.com">
+	<META NAME="COPYRIGHT" CONTENT="&copy; 2012 Ian Irving">
 	
 	<!-- Required stylesheet -->
 	<link rel="stylesheet" href="core/deck.core.css">
@@ -36,12 +38,12 @@
 
 
 <section class="slide">
-	<h2>Modern and Mobile Web Development, in 2012</h2>
+	<h2>Modern and Mobile Web Development</h2>
 			<h3>Ian Irving</h3>
-				<p>www.FalsePositives.com</h3>
-				<p>www.ConnectedThinking.com
-				<p>Twitter @IanIrving
-				<p>GitHub https://github.com/iirving
+				<p><a href="http://www.FalsePositives.com">www.FalsePositives.com</a></h3>
+				<p><a href="http://www.ConnectedThinking.com">www.ConnectedThinking.com</a>
+				<p><a href="https://twitter.com/ianirving">Twitter @IanIrving</a>
+				<p><a href="https://github.com/iirving">GitHub https://github.com/iirving</a>
 </section>
 
 <section class="slide">
@@ -104,7 +106,7 @@
 
 <section class="slide">
 	<h2>CSS : Table Driven Layout </h2>
-	And we used table layout in lining up FORM elements with their labels. (<em>Inside<em> the content cell of another table!) (<a href="old2.html">old2</a>)
+	And we used table layout in lining up FORM elements with their labels. (<em>Inside</em> the content cell of another table!) (<a href="old2.html">old2</a>)
 	<pre class="slide"><code>
 &lt;td&gt;Content
 	&lt;table&gt; 
@@ -144,11 +146,7 @@
 	<p>Grids offered a solution for layout that got the structure out of the html markup : 
 	<p>See <a href=">http://www.alistapart.com/articles/practicalcss/">From Table Hacks to CSS Layout: A Web Designer’s Journey</a> </p>
 	<p class="silde">And they offered a strong Visual Design Language from a years of print layout: <a href="http://www.smashingmagazine.com/2007/04/14/designing-with-grid-based-approach/">Designing With Grid-Based Approach</a> </p>
-</section>
-
-<section  class="slide">
-	<h2>CSS : Grids to the rescue</h2>
-	(<a href="css1.html">css1</a>)
+	<p class="slide">(<a href="css1.html">css1</a>)</p>
 	<pre class="slide"><code>
 &lt;div id="content" class="article span-14 append-3"&gt;
 	&lt;div class="span-14"&gt;Content&lt;/div&gt;
@@ -161,8 +159,7 @@
         	&lt;lable class="span-3 append-2" for="company"&gt;Company:&lt;/lable&gt;
       		&lt;span class="span-2"&gt;&lt;/span&gt;
       		&lt;input id="company" class="span-8 alignR" type="text"&gt;
-	&lt;/div&gt;
-                
+	&lt;/div&gt;    
 &lt;/div&gt;
 	</code></pre>
 </section>
@@ -230,7 +227,7 @@
 	<p class="slide">and then the Android devices,</p>
 	<p class="slide">and the iPad</p>
 	<p class="slide">So how do you developed a web site that "works" on all those layouts without going crazy? </p>
-    <p class="slide">(insert here graphic of Ian pulling out the rest of his hair)</p>
+    <p class="slide">(insert graphic of Ian pulling out the rest of his hair)</p>
 </section>
 
  <section class="slide">
@@ -256,18 +253,19 @@
 	    </li>
 	</ul>
 
+	<p class="slide"><a href="http://mediaqueri.es/">Media Queries</a> to see want is being done</p>
+
 <p class="slide">First Rate HTML5 Responsive Frameworks include</p>
 <ul class="slide">
- <li> <a href="">HTML5 Boilerplate</a>  </li>
- <li><a href="">Twitter Bootstrap</a>  </li>
-  <li><a href="http://cssgrid.net/">1140 ccs grid</a>    </li>
+ <li> <a href="http://html5boilerplate.com/">HTML5 Boilerplate</a>  </li>
+ <li><a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a>  </li>
  <li><a href="http://stuffandnonsense.co.uk/projects/320andup/">320 and up</a>    </li>
 
 </ul>
  <p class="slide">More Reading</p>
 <ul class="slide">
  <li>
- <a ref="http://www.alistapart.com/articles/responsive-web-design/">A List Apart : Responsive Web Design</a></li>
+ <a href="http://www.alistapart.com/articles/responsive-web-design/">A List Apart : Responsive Web Design</a></li>
  <li><a href="http://blogs.msdn.com/b/cdndevs/archive/2012/02/15/what-the-heck-is-responsive-web-design.aspx">What the heck is Responsive Web Design?</a></li>
  <li><a  href="https://developers.facebook.com/html5/blog/post/4/">Responsive Design Essentials: Look Great on any Device</a></li>
 
@@ -341,9 +339,9 @@
 	     Several CSS preprocessors are available today, like LESS, SASS, or Stylus.</br><br>
 	     <a href="http://www.catswhocode.com/blog/8-css-preprocessors-to-speed-up-development-time">
 	     	8 CSS preprocessors to speed up development time</a>
-	 </br>
+	 </br></br>
 	 <p class="">      
-	 I use SASS (stands for Syntactically Awesome Stylesheets)  http://sass-lang.com/   http://thesassway.com/</p>
+	 I use <a href="http://sass-lang.com/ ">SASS</a> (stands for Syntactically Awesome Stylesheets)</p>
 	 <ul class="">
 	 	<li>the .scss file type is a super set of CSS</il>
 	     <li>the Compass library (http://compass-style.org/) for Sass adds robust CSS3 mixins, and helper functions for urls and sprites, and helps with cross browser compatibility</li>
@@ -513,7 +511,7 @@ border: 2px $blue solid;    }
 
 <section class="slide">
 	<h2>JavaScript : and along came jQuery</h2>
-<p>in 2006 a new framework called jQuery:</p>
+<p>in 2006 a new framework called <a href="http://jquery.com/">jQuery</a>:</p>
       <ul class="slide">
         	<li>it had a great CSS selector function so I could use my CSS id's and Classes</li>
        <li>it had chaining, so my code is clearer. $("div.test").add("p.quote").addClass("blue").slideDown("slow");</li>
@@ -736,7 +734,7 @@ border: 2px $blue solid;    }
            
   <p class="slide">a versioned RESTful API means you can build multi presentation layers with each moving at it own velocity</a></p>
             
-  <p class="slide">Doing Distributed Version Control using Git, with offsite source control on GitHub. (they have a locally hosted on a vm Enterprise version) </p>
+  <p class="slide">Doing Distributed Version Control using <a href="http://git-scm.com/">Git</a>, with offsite source control on GitHub. (they have a locally hosted on a vm Enterprise version) </p>
         
    <p class="slide">using a css preprocessor like SASS to speed up development, (variables, constants, functions, mixins, math) to create my CSS.</p>
         
@@ -760,7 +758,7 @@ border: 2px $blue solid;    }
      <p class="slide">deploying to the Cloud : a virtual private linux server on Amazon EC2 (or linode and vps.net)</p>
      <p class="slide"> or using a PASS vendor like Heroku or AppFog</p>
      	<p><p>
-     <p class="slide">      with a capistrano script or other automated processes </p>
+     <p class="slide">      with a capistrano deployment script or other automated processes </p>
 <p><p>
      
      <p class="slide">   using MySql or (increasingly) PostGreSQL  as a relational db</p>
